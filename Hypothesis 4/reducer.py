@@ -19,9 +19,7 @@ for i, line in enumerate(sys.stdin):
     sums[key] += rating
     counts[key] += 1
     
-    #if i < 20:
-    #   print(f"DEBUG REDUCER: {product_id}\t{ym}\t{rating}", file=sys.stderr) 
-
+ 
 for product_id, ym in sorted(sums.keys()):
     total = sums[(product_id, ym)]
     count = counts[(product_id, ym)]
